@@ -17,9 +17,9 @@ spec:
           name: nginx
           # command: ["sh", "-c", "sleep 30 && /docker-entrypoint.sh nginx -g daemon off;"]
           command: ["sh", "-c", "sleep 30 && /docker-entrypoint.sh nginx -g \"daemon off;\""]
-          startupProbe:
-            initialDelaySecond: 35
-            periodSeconds: 5
-            httpGet:
-              path: /
-              port: 80
+          # startupProbe:
+          #   initialDelaySecond: 35
+          #   periodSeconds: 5
+          #   httpGet:
+          #     path: /
+          #     port: 80
