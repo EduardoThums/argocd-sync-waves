@@ -4,6 +4,7 @@ metadata:
   name: nginx-1
   namespace: argocd
   annotations:
+    argocd.argoproj.io/hook: Sync
     argocd.argoproj.io/sync-wave: "0"
 spec:
   project: default
@@ -25,6 +26,7 @@ metadata:
   name: nginx-2
   namespace: argocd
   annotations:
+    argocd.argoproj.io/hook: Sync
     argocd.argoproj.io/sync-wave: "1"
 spec:
   project: default
